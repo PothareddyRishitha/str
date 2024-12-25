@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+//         Basic level
+// Task 1: take prompt and Convert to Uppercase
+// Task 2: take prompt and Convert to Lowercase
+// Task 3: take prompt and Reverse a String
+// hints: use split and reverse and join method
+
+console.log("UPPER CASE");
+let a=prompt("enter a name");
+console.log(a.toUpperCase(a))
+
+
+console.log("LOWER CASE");
+let b=prompt("enter a name");
+console.log(b.toLowerCase(b))
+
+
+console.log("reverse")
+function reverseString(Prompt){
+return prompt.split( " ").reverse().join(' ');
+}
+
+// Task 1: Username Validation
+// Scenario: Validate a username based on specific criteria. Task:
+// Prompt the user to enter a username.
+// Check if the username contains characters in between 5 to 15 long.
+// Display a message indicating whether the username is valid or no
+
+let c=prompt("enter a username");
+if(c.length>= 5&& c.length<=15){
+    console.log("it is valid")
+}
+else{
+    console.log("it is not valid")
+}
+
+
+// Task 2: Email Formatter
+// Scenario: Format an email address. Task:
+// Prompt the user to enter their first and last name.
+// Convert the names to lowercase and concatenate them with a dot in between.
+// concat “@gmail.com” to the result and display the formatted email address.
+// inp: jenny and joy
+// out: jenny.joy@gmail.com
+
+
+console.log("EMAIL FORMATTER");
+let str1=prompt("enter your first name");
+let str2=prompt("enter your last name");
+
+
+function Email() {
+    if (str1&& str2) {
+        str1 = str1.toLowerCase();
+        str2 = str2.toLowerCase();
+        let email = str1 + "." + str2 + "@gmail.com";
+        console.log("email address:", email);
+    }
+     else {
+        console.log("str1 and str2 cannot be empty.");
+    }
+}
+
+Email();
+
+
+
+
+
+
+
+console.log("POLINDROME");
+let y=prompt("enter a word");
+z=y.split("").reverse().join("");
+if(z==y){
+    console.log("it is a polindrome")
+}
+else{
+    console.log("it is not a polindrome")
+}
+
+
+
+
+// Task 3: Word Counter
+// Scenario: Count the number of words in a sentence. Task:
+// Prompt the user to enter a sentence.
+// Split the sentence into words and count them.
+// Display the word count.
+// Hint: use split and length method
+let word=prompt("enter a sentence");
+console.log(word.split(""));
+console.log(word.length);
+
+
+
+    </script>
+    
+</body>
+</html>
